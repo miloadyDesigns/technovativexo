@@ -1,0 +1,39 @@
+
+@import url(layout.min.css);
+html,
+body {
+    height: 100%;
+    font-family: 'Acumin Pro';
+}
+html {
+    font-size: 16px;
+    line-height: 1;
+}
+body {
+    background: var(--white);
+    font-family: 'Acumin Pro';
+    font-size: 1rem;
+    line-height: 1;
+}
+a,
+button {
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+a:hover,
+button:hover {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,1409 @@
+<!doctype html>
+<html lang="en-US">
+
+<!-- Mirrored from geeksroot.com/blog/tag/android-developer/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Oct 2024 19:50:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="ahrefs-site-verification" content="fd09c2ce37551b14778113709f6bf37f475c97a93cf0ac4b0da317037d111fe4">
+
+	<!--website-favicon-->
+	<!-- <link href="/images/favicon_geeksroot.png" rel="icon"> -->
+	<!--plugin-css-->
+	<link href="../../../css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="../../../css/locomotive-scroll.min.css" rel="stylesheet">
+    <link href="../../../fontawesome6/css/all.css" rel="stylesheet">
+    <link href="../../../css/slick.css" rel="stylesheet">
+	<!-- template-style-->
+		<!-- Google tag (gtag.js) -->
+	<!-- Optimized with WP Meteor v3.3.1 - https://wordpress.org/plugins/wp-meteor/ --><script data-wpmeteor-nooptimize="true" >var _wpmeteor={"gdpr":true,"rdelay":0,"preload":true,"elementor-animations":true,"elementor-pp":true,"v":"3.3.1","rest_url":"https:\/\/geeksroot.com\/blog\/wp-json\/"};(()=>{try{new MutationObserver(function(){}),new PerformanceObserver(function(){}),Object.assign({},{}),document.fonts.ready.then(function(){})}catch{t="wpmeteordisable=1",i=document.location.href,i.match(/[?&]wpmeteordisable/)||(o="",i.indexOf("?")==-1?i.indexOf("#")==-1?o=i+"?"+t:o=i.replace("#","?"+t+"#"):i.indexOf("#")==-1?o=i+"&"+t:o=i.replace("#","&"+t+"#"),document.location.href=o)}var t,i,o;})();
+
+</script><script data-wpmeteor-nooptimize="true" >(()=>{var M=class{constructor(){this.l=[]}emit(e,r=null){this.l[e]&&this.l[e].forEach(n=>n(r))}on(e,r){this.l[e]||=[],this.l[e].push(r)}off(e,r){this.l[e]=(this.l[e]||[]).filter(n=>n!==r)}};var h=new M;var _e=()=>Math.round(performance.now())/1e3;var ke=document,Gt="DOMContentLoaded",T=class{constructor(){this.known=[]}init(){let e,r,n=!1,o=s=>{if(!n&&s&&s.fn&&!s.__wpmeteor){let d=function(i){return ke.addEventListener(Gt,c=>{i.bind(ke)(s,c,"jQueryMock")}),this};this.known.push([s,s.fn.ready,s.fn.init.prototype.ready]),s.fn.ready=d,s.fn.init.prototype.ready=d,s.__wpmeteor=!0}return s};window.jQuery&&(e=o(window.jQuery)),Object.defineProperty(window,"jQuery",{get(){return e},set(s){e=o(s)}}),Object.defineProperty(window,"$",{get(){return r},set(s){r=o(s)}}),h.on("l",()=>n=!0)}unmock(){this.known.forEach(([e,r,n])=>{e.fn.ready=r,e.fn.init.prototype.ready=n})}};var xe={};((t,e)=>{try{let r=Object.defineProperty({},e,{get:function(){return xe[e]=!0}});t.addEventListener(e,null,r),t.removeEventListener(e,null,r)}catch{}})(window,"passive");var le=xe;var Ae=window,V=document,pe="addEventListener",ue="removeEventListener",Y="removeAttribute",X="getAttribute",Ut="setAttribute",Re="DOMContentLoaded",Ne=["mouseover","keydown","touchmove","touchend","wheel"],Me=["mouseover","mouseout","touchstart","touchmove","touchend","click"],B="data-wpmeteor-";var P=class{init(){let e=!1,r=!1,n=c=>{e||(e=!0,Ne.forEach(l=>V.body[ue](l,n,le)),clearTimeout(r),h.emit("fi"))},o=c=>{let l=new MouseEvent("click",{view:c.view,bubbles:!0,cancelable:!0});return Object.defineProperty(l,"target",{writable:!1,value:c.target}),l};h.on("i",()=>{e||n()});let s=[],d=c=>{c.target&&"dispatchEvent"in c.target&&(c.type==="click"?(c.preventDefault(),c.stopPropagation(),s.push(o(c))):c.type!=="touchmove"&&s.push(c),c.target[Ut](B+c.type,!0))};h.on("l",()=>{Me.forEach(_=>Ae[ue](_,d));let c;for(;c=s.shift();){var l=c.target;l[X](B+"touchstart")&&l[X](B+"touchend")&&!l[X](B+"click")?(l[X](B+"touchmove")||(l[Y](B+"touchmove"),s.push(o(c))),l[Y](B+"touchstart"),l[Y](B+"touchend")):l[Y](B+c.type),l.dispatchEvent(c)}});let i=()=>{Ne.forEach(c=>V.body[pe](c,n,le)),Me.forEach(c=>Ae[pe](c,d)),V[ue](Re,i)};V[pe](Re,i)}};var Te=document,Z=Te.createElement("span");Z.setAttribute("id","elementor-device-mode");Z.setAttribute("class","elementor-screen-only");var Bt=!1,Pe=()=>(Bt||Te.body.appendChild(Z),getComputedStyle(Z,":after").content.replace(/"/g,""));var ee=window,Fe=document,Ie=Fe.documentElement;var We="getAttribute",ze="setAttribute",qe=t=>t[We]("class")||"",He=(t,e)=>t[ze]("class",e),je=()=>{window.addEventListener("load",function(){let t=Pe(),e=Math.max(Ie.clientWidth||0,ee.innerWidth||0),r=Math.max(Ie.clientHeight||0,ee.innerHeight||0),n=["_animation_"+t,"animation_"+t,"_animation","_animation","animation"];Array.from(Fe.querySelectorAll(".elementor-invisible")).forEach(o=>{let s=o.getBoundingClientRect();if(s.top+ee.scrollY<=r&&s.left+ee.scrollX<e)try{let i=JSON.parse(o[We]("data-settings"));if(i.trigger_source)return;let c=i._animation_delay||i.animation_delay||0,l,_;for(var d=0;d<n.length;d++)if(i[n[d]]){_=n[d],l=i[_];break}if(l){let Oe=qe(o),Lt=l==="none"?Oe:Oe+" animated "+l,bt=setTimeout(()=>{He(o,Lt.replace(/\belementor-invisible\b/,"")),n.forEach(Dt=>delete i[Dt]),o[ze]("data-settings",JSON.stringify(i))},c);h.on("fi",()=>{clearTimeout(bt),He(o,qe(o).replace(new RegExp("\b"+l+"\b"),""))})}}catch(i){console.error(i)}})})};var fe=document,Qe="getAttribute",Ct="setAttribute",me="querySelectorAll",Ke="data-in-mega_smartmenus",$e=()=>{let t=fe.createElement("div");t.innerHTML='<span class="sub-arrow --wp-meteor"><i class="fa" aria-hidden="true"></i></span>';let e=t.firstChild,r=n=>{let o=[];for(;n=n.previousElementSibling;)o.push(n);return o};fe.addEventListener("DOMContentLoaded",function(){Array.from(fe[me](".pp-advanced-menu ul")).forEach(n=>{if(n[Qe](Ke))return;(n[Qe]("class")||"").match(/\bmega-menu\b/)&&n[me]("ul").forEach(d=>{d[Ct](Ke,!0)});let o=r(n),s=o.filter(d=>d).filter(d=>d.tagName==="A").pop();if(s||(s=o.map(d=>Array.from(d[me]("a"))).filter(d=>d).flat().pop()),s){let d=e.cloneNode(!0);s.appendChild(d),new MutationObserver(c=>{c.forEach(({addedNodes:l})=>{l.forEach(_=>{if(_.nodeType===1&&_.tagName==="SPAN")try{s.removeChild(d)}catch{}})})}).observe(s,{childList:!0})}})})};var v="DOMContentLoaded",y="readystatechange",b="message";var K="SCRIPT",St=()=>{},x=console.error,u="data-wpmeteor-",U=Object.defineProperty,De=Object.defineProperties,Ge="javascript/blocked",at=/^(text\/javascript|module)$/i,dt="requestAnimationFrame",lt="requestIdleCallback",oe="setTimeout",p=window,a=document,w="addEventListener",ie="removeEventListener",f="getAttribute",q="setAttribute",N="removeAttribute",G="hasAttribute",m="load",ce="error",$=p.constructor.name+"::",J=a.constructor.name+"::",pt=function(t,e){e=e||p;for(var r=0;r<this.length;r++)t.call(e,this[r],r,this)};"NodeList"in p&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=pt);"HTMLCollection"in p&&!HTMLCollection.prototype.forEach&&(HTMLCollection.prototype.forEach=pt);_wpmeteor["elementor-animations"]&&je();_wpmeteor["elementor-pp"]&&$e();var D=[],k=[],Je=window.innerHeight||document.documentElement.clientHeight,Ve=window.innerWidth||document.documentElement.clientWidth,te=!1,R=[],g={},ut=!1,Ue=!1,Ot=0,re=a.visibilityState==="visible"?p[dt]:p[oe],ft=p[lt]||re;a[w]("visibilitychange",()=>{re=a.visibilityState==="visible"?p[dt]:p[oe],ft=p[lt]||re});var E=p[oe],ne,I=["src","async","defer","type","integrity"],F=Object,W="definePropert";F[W+"y"]=(t,e,r)=>t===p&&["jQuery","onload"].indexOf(e)>=0||(t===a||t===a.body)&&["readyState","write","writeln","on"+y].indexOf(e)>=0?(["on"+y,"on"+m].indexOf(e)&&r.set&&(g["on"+y]=g["on"+y]||[],g["on"+y].push(r.set)),t):t instanceof HTMLScriptElement&&I.indexOf(e)>=0?(t[e+"Getters"]||(t[e+"Getters"]=[],t[e+"Setters"]=[],U(t,e,{set(n){t[e+"Setters"].forEach(o=>o.call(t,n))},get(){return t[e+"Getters"].slice(-1)[0]()}})),r.get&&t[e+"Getters"].push(r.get),r.set&&t[e+"Setters"].push(r.set),t):U(t,e,r);F[W+"ies"]=(t,e)=>{for(let r in e)F[W+"y"](t,r,e[r]);return t};var H,he,S=a[w].bind(a),mt=a[ie].bind(a),O=p[w].bind(p),ae=p[ie].bind(p);typeof EventTarget<"u"&&(H=EventTarget.prototype.addEventListener,he=EventTarget.prototype.removeEventListener,S=H.bind(a),mt=he.bind(a),O=H.bind(p),ae=he.bind(p));var C=a.createElement.bind(a),de=a.__proto__.__lookupGetter__("readyState").bind(a),Ye="loading";U(a,"readyState",{get(){return Ye},set(t){return Ye=t}});var Xe=t=>R.filter(([e,,r],n)=>{if(!(t.indexOf(e.type)<0)){r||(r=e.target);try{let o=r.constructor.name+"::"+e.type;for(let s=0;s<g[o].length;s++)if(g[o][s]){let d=o+"::"+n+"::"+s;if(!ve[d])return!0}}catch{}}}).length,z,ve={},j=t=>{R.forEach(([e,r,n],o)=>{if(!(t.indexOf(e.type)<0)){n||(n=e.target);try{let s=n.constructor.name+"::"+e.type;if((g[s]||[]).length)for(let d=0;d<g[s].length;d++){let i=g[s][d];if(i){let c=s+"::"+o+"::"+d;if(!ve[c]){ve[c]=!0,a.readyState=r,z=s;try{Ot++,!i.prototype||i.prototype.constructor===i?i.bind(n)(e):i(e)}catch(l){x(l,i)}z=null}}}}catch(s){x(s)}}})};S(v,t=>{R.push([t,de(),a])});S(y,t=>{R.push([t,de(),a])});O(v,t=>{R.push([t,de(),p])});var ht=new T;O(m,t=>{R.push([t,de(),p]),A||(j([v,y,b,m]),ht.init())});var gt=t=>{R.push([t,a.readyState,p])},_t=()=>{ae(b,gt),(g[$+"message"]||[]).forEach(t=>{O(b,t)})};O(b,gt);h.on("fi",a.dispatchEvent.bind(a,new CustomEvent("fi")));h.on("fi",()=>{Ue=!0,A=!0,yt(),a.readyState="loading",E(L)});var vt=()=>{ut=!0,Ue&&!A&&(a.readyState="loading",E(L)),ae(m,vt)};O(m,vt);_wpmeteor.rdelay>=0&&new P().init(_wpmeteor.rdelay);var Ee=1,Ze=()=>{--Ee||E(h.emit.bind(h,"l"))};var A=!1,L=()=>{let t=D.shift();if(t)t[f](u+"src")?t[G](u+"async")?(Ee++,ge(t,Ze),E(L)):ge(t,E.bind(null,L)):(t.origtype==Ge&&ge(t),E(L));else if(Xe([v,y,b]))j([v,y,b]),E(L);else if(Ue&&ut)if(Xe([m,b]))j([m,b]),E(L);else if(Ee>1)ft(L);else if(k.length){for(;k.length;)D.push(k.shift());yt(),E(L)}else{if(p.RocketLazyLoadScripts)try{RocketLazyLoadScripts.run()}catch(e){x(e)}a.readyState="complete",_t(),ht.unmock(),A=!1,te=!0,p[oe](Ze)}else A=!1},ye=t=>{let e=C(K),r=t.attributes;for(var n=r.length-1;n>=0;n--)e[q](r[n].name,r[n].value);let o=t[f](u+"type");return o?e.type=o:e.type="text/javascript",(t.textContent||"").match(/^\s*class RocketLazyLoadScripts/)?e.textContent=t.textContent.replace(/^\s*class\s*RocketLazyLoadScripts/,"window.RocketLazyLoadScripts=class").replace("RocketLazyLoadScripts.run();",""):e.textContent=t.textContent,["after","type","src","async","defer"].forEach(s=>e[N](u+s)),e},et=(t,e)=>{let r=t.parentNode;if(r){if((r.nodeType===11?C(r.host.tagName):C(r.tagName)).appendChild(r.replaceChild(e,t)),!r.isConnected){x("Parent for",t," is not part of the DOM");return}return t}x("No parent for",t)},ge=(t,e)=>{let r=t[f](u+"src");if(r){let n=ye(t),o=H?H.bind(n):n[w].bind(n);t.getEventListeners&&t.getEventListeners().forEach(([i,c])=>{o(i,c)}),e&&(o(m,e),o(ce,e)),n.src=r;let s=et(t,n),d=n[f]("type");(!s||t[G]("nomodule")||d&&!at.test(d))&&e&&e()}else t.origtype===Ge?et(t,ye(t)):e&&e()},Be=(t,e)=>{let r=(g[t]||[]).indexOf(e);if(r>=0)return g[t][r]=void 0,!0},tt=(t,e,...r)=>{if("HTMLDocument::"+v==z&&t===v&&!e.toString().match(/jQueryMock/)){h.on("l",a.addEventListener.bind(a,t,e,...r));return}if(e&&(t===v||t===y)){let n=J+t;g[n]=g[n]||[],g[n].push(e),te&&j([t]);return}return S(t,e,...r)},rt=(t,e)=>{if(t===v){let r=J+t;Be(r,e)}return mt(t,e)};De(a,{[w]:{get(){return tt},set(){return tt}},[ie]:{get(){return rt},set(){return rt}}});var nt={},we=t=>{if(t)try{t.match(/^\/\/\w+/)&&(t=a.location.protocol+t);let e=new URL(t.html),r=e.origin;if(r&&!nt[r]&&a.location.host!==e.host){let n=C("link");n.rel="preconnect",n.href=r,a.head.appendChild(n),nt[r]=!0}}catch{}},Q={},Et=(t,e,r,n)=>{var o=C("link");o.rel=e?"modulepre"+m:"pre"+m,o.as="script",r&&o[q]("crossorigin",r),o.href=t,n.appendChild(o),Q[t]=!0},yt=()=>{if(_wpmeteor.preload&&D.length){let t=a.createDocumentFragment();D.forEach(e=>{let r=e[f](u+"src");r&&!Q[r]&&!e[f](u+"integrity")&&!e[G]("nomodule")&&Et(r,e[f](u+"type")=="module",e[G]("crossorigin")&&e[f]("crossorigin"),t)}),re(a.head.appendChild.bind(a.head,t))}};S(v,()=>{let t=[...D];D.splice(0,D.length),[...a.querySelectorAll("script["+u+"after]"),...t].forEach(e=>{if(se.some(n=>n===e))return;let r=e.__lookupGetter__("type").bind(e);U(e,"origtype",{get(){return r()}}),(e[f](u+"src")||"").match(/\/gtm.js\?/)?k.push(e):e[G](u+"async")?k.unshift(e):D.push(e),se.push(e)})});var Le=function(...t){let e=C(...t);if(t[0].toUpperCase()!==K||!A)return e;let r=e[q].bind(e),n=e[f].bind(e),o=e[G].bind(e);r(u+"after","REORDER"),r(u+"type","text/javascript"),e.type=Ge;let s=[];e.getEventListeners=()=>s,F[W+"ies"](e,{onreadystatechange:{set(i){s.push([m,i])}},onload:{set(i){s.push([m,i])}},onerror:{set(i){s.push([ce,i])}}}),I.forEach(i=>{let c=e.__lookupGetter__(i).bind(e);F[W+"y"](e,i,{set(l){return l?e[q](u+i,l):e[N](u+i)},get(){return e[f](u+i)}}),U(e,"orig"+i,{get(){return c()}})}),e[w]=function(i,c){s.push([i,c])},e[q]=function(i,c){if(I.includes(i))return c?r(u+i,c):e[N](u+i);["onload","onerror","onreadystatechange"].includes(i)?c?(r(u+i,c),r(i,'document.dispatchEvent(new CustomEvent("wpmeteor:load", { detail: { event: event, target: this } }))')):(e[N](i),e[N](u+i,c)):r(i,c)},e[f]=function(i){return I.indexOf(i)>=0?n(u+i):n(i)},e[G]=function(i){return I.indexOf(i)>=0?o(u+i):o(i)};let d=e.attributes;return U(e,"attributes",{get(){return[...d].filter(c=>c.name!=="type"&&c.name!==u+"after").map(c=>({name:c.name.match(new RegExp(u))?c.name.replace(u,""):c.name,value:c.value}))}}),e};Object.defineProperty(a,"createElement",{set(t){t!==Le&&(ne=t)},get(){return ne||Le}});var se=[],Ce=new MutationObserver(t=>{A&&t.forEach(({addedNodes:e,target:r})=>{e.forEach(n=>{if(n.nodeType===1)if(K===n.tagName)if(n[f](u+"after")==="REORDER"&&(!n[f](u+"type")||at.test(n[f](u+"type")))){let o=n[f](u+"src");se.filter(s=>s===n).length&&x("Inserted twice",n),n.parentNode?(se.push(n),(o||"").match(/\/gtm.js\?/)?(k.push(n),we(o)):n[G](u+"async")?(k.unshift(n),we(o)):(o&&!n[f](u+"integrity")&&!n[G]("nomodule")&&!Q[o]&&(St(_e(),"pre preload",D.length),Et(o,n[f](u+"type")=="module",n[G]("crossorigin")&&n[f]("crossorigin"),a.head)),D.push(n))):(n.addEventListener(m,s=>s.target.parentNode.removeChild(s.target)),n.addEventListener(ce,s=>s.target.parentNode.removeChild(s.target)),r.appendChild(n))}else h.emit("s",n.src);else n.tagName==="LINK"&&n[f]("as")==="script"&&(Q[n[f]("href")]=!0)})})}),wt={childList:!0,subtree:!0,attributes:!0,attributeOldValue:!0};Ce.observe(a.documentElement,wt);var kt=HTMLElement.prototype.attachShadow;HTMLElement.prototype.attachShadow=function(t){let e=kt.call(this,t);return t.mode==="open"&&Ce.observe(e,wt),e};h.on("l",()=>{(!ne||ne===Le)&&(a.createElement=C,Ce.disconnect()),a.dispatchEvent(new CustomEvent("l"))});var be=t=>{let e,r;!a.currentScript||!a.currentScript.parentNode?(e=a.body,r=e.lastChild):(r=a.currentScript,e=r.parentNode);try{let n=C("div");n.innerHTML=t,Array.from(n.childNodes).forEach(o=>{o.nodeName===K?e.insertBefore(ye(o),r):e.insertBefore(o,r)})}catch(n){x(n)}},st=t=>be(t+`
+`);De(a,{write:{get(){return be},set(t){return be=t}},writeln:{get(){return st},set(t){return st=t}}});var ot=(t,e,...r)=>{if("Window::"+v==z&&t===v&&!e.toString().match(/jQueryMock/)){h.on("l",p.addEventListener.bind(p,t,e,...r));return}if("Window::"+m==z&&t===m){h.on("l",p.addEventListener.bind(p,t,e,...r));return}if(e&&(t===m||t===v||t===b&&!te)){let n=t===v?J+t:$+t;g[n]=g[n]||[],g[n].push(e),te&&j([t]);return}return O(t,e,...r)},it=(t,e)=>{if(t===m){let r=t===v?J+t:$+t;Be(r,e)}return ae(t,e)};De(p,{[w]:{get(){return ot},set(){return ot}},[ie]:{get(){return it},set(){return it}}});var Se=t=>{let e;return{get(){return e},set(r){return e&&Be(t,r),g[t]=g[t]||[],g[t].push(r),e=r}}};S("wpmeteor:load",t=>{let{target:e,event:r}=t.detail,n=e===p?a.body:e,o=n[f](u+"on"+r.type);n[N](u+"on"+r.type);try{let s=new Function("event",o);e===p?p[w](m,p[w].bind(p,m,s)):s.call(e,r)}catch(s){console.err(s)}});{let t=Se($+m);U(p,"onload",t),S(v,()=>{U(a.body,"onload",t)})}U(a,"onreadystatechange",Se(J+y));U(p,"onmessage",Se($+b));if(!1)try{}catch(t){}var xt=t=>{let r={"4g":1250,"3g":2500,"2g":2500}[(navigator.connection||{}).effectiveType]||0,n=t.getBoundingClientRect(),o={top:-1*Je-r,left:-1*Ve-r,bottom:Je+r,right:Ve+r};return!(n.left>=o.right||n.right<=o.left||n.top>=o.bottom||n.bottom<=o.top)},ct=(t=!0)=>{let e=1,r=-1,n={},o=()=>{r++,--e||E(h.emit.bind(h,"i"),_wpmeteor.rdelay)};Array.from(a.getElementsByTagName("*")).forEach(s=>{let d,i,c;if(s.tagName==="IMG"){let l=s.currentSrc||s.src;l&&!n[l]&&!l.match(/^data:/i)&&((s.loading||"").toLowerCase()!=="lazy"||xt(s))&&(d=l)}else if(s.tagName===K)we(s[f](u+"src"));else if(s.tagName==="LINK"&&s[f]("as")==="script"&&["pre"+m,"modulepre"+m].indexOf(s[f]("rel"))>=0)Q[s[f]("href")]=!0;else if((i=p.getComputedStyle(s))&&(c=(i.backgroundImage||"").match(/^url\s*\((.*?)\)/i))&&(c||[]).length){let l=c[0].slice(4,-1).replace(/"/g,"");!n[l]&&!l.match(/^data:/i)&&(d=l)}if(d){n[d]=!0;let l=new Image;t&&(e++,l[w](m,o),l[w](ce,o)),l.src=d}}),a.fonts.ready.then(()=>{o()})};_wpmeteor.rdelay===0?S(v,()=>E(ct.bind(null,!1))):O(m,ct);})();
+//0.1.16
+
+</script><script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-async data-wpmeteor-src="https://www.googletagmanager.com/gtag/js?id=G-6X4X6KZ8MD"></script>
+	<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-6X4X6KZ8MD');
+	</script>
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>android developer Archives - Blogs</title>
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="android developer Archives - Blogs" />
+	<meta property="og:url" content="https://geeksroot.com/blog/tag/android-developer/" />
+	<meta property="og:site_name" content="Blogs" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://geeksroot.com/blog/tag/android-developer/","url":"https://geeksroot.com/blog/tag/android-developer/","name":"android developer Archives - Blogs","isPartOf":{"@id":"https://geeksroot.com/blog/#website"},"primaryImageOfPage":{"@id":"https://geeksroot.com/blog/tag/android-developer/#primaryimage"},"image":{"@id":"https://geeksroot.com/blog/tag/android-developer/#primaryimage"},"thumbnailUrl":"https://geeksroot.com/blog/wp-content/uploads/2022/09/coding-man_11zon-1-scaled.jpg","breadcrumb":{"@id":"https://geeksroot.com/blog/tag/android-developer/#breadcrumb"},"inLanguage":"en-US"},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://geeksroot.com/blog/tag/android-developer/#primaryimage","url":"https://geeksroot.com/blog/wp-content/uploads/2022/09/coding-man_11zon-1-scaled.jpg","contentUrl":"https://geeksroot.com/blog/wp-content/uploads/2022/09/coding-man_11zon-1-scaled.jpg","width":2560,"height":1709,"caption":"mean stack developer"},{"@type":"BreadcrumbList","@id":"https://geeksroot.com/blog/tag/android-developer/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://geeksroot.com/blog/"},{"@type":"ListItem","position":2,"name":"android developer"}]},{"@type":"WebSite","@id":"https://geeksroot.com/blog/#website","url":"https://geeksroot.com/blog/","name":"Blogs","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://geeksroot.com/blog/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="Blogs &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Blogs &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Blogs &raquo; android developer Tag Feed" href="feed/index.html" />
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/geeksroot.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min1e39.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mpp_gutenberg-css' href='../../wp-content/plugins/metronet-profile-picture/dist/blocks.style.buildd315.css?ver=2.6.0' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='bootstrap-css' href='../../wp-content/themes/wpbstarter/assets/css/bootstrapa94e.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='../../wp-content/themes/wpbstarter/assets/css/fontawesome-all05c8.css?ver=5.13.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpbstarter-defaultcss-css' href='../../wp-content/themes/wpbstarter/assets/css/default5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpbstarter-customcss-css' href='../../wp-content/themes/wpbstarter/assets/css/custom5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='sinanav-css' href='../../wp-content/themes/wpbstarter/assets/css/sina-nav5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpbstarter-responsive-css' href='../../wp-content/themes/wpbstarter/assets/css/responsive53cf.css?ver=2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpbstarter-style-css' href='../../wp-content/themes/wpbstarter/style1e39.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css' href='../../wp-content/plugins/recent-posts-widget-with-thumbnails/public03db.css?ver=7.1.1' type='text/css' media='all' />
+<script   type="text/javascript" src="../../wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<!--[if lt IE 9]>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/blog/wp-content/themes/wpbstarter/assets/js/html5.js?ver=3.7.0" id="html5hiv-js"></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../wp-json/wp/v2/tags/127.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.php?rsd" />
+<meta name="generator" content="WordPress 6.4.2" />
+    <style type="text/css">
+        .blog-title { background-color: #333; 
+         }
+
+        .archive-title { background-color: #333; 
+         }
+
+        .search-title { background-color: #333; 
+         }
+
+        .nfound-title { background-color: #333; 
+         }
+    </style>
+    <link rel="icon" href="../../wp-content/uploads/2023/08/logo.png" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2023/08/logo.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2023/08/logo.png" />
+<meta name="msapplication-TileImage" content="https://geeksroot.com/blog/wp-content/uploads/2023/08/logo.png" />
+    <!--<link href="https://geeksroot.com/css/layout.min.css" rel="stylesheet">-->
+    <!--<link href="https://geeksroot.com/css/custom.min.css" rel="stylesheet">-->
+    <!--<link href="https://geeksroot.com/css/responsive.min.css" rel="stylesheet">-->
+</head>
+
+ <!-- Cursor Pointer    -->
+<!--   <div class="arrowcursor">
+    <svg></svg>
+  </div> -->
+<!-- Cursor Pointer    -->
+
+<div class="getquotebuttons">
+    <ul>
+        <li><a href="tel:+17866001330"><i class="fa-solid fa-phone"></i> (786)-600-1330 </a></li>
+        <li><a href="contact.html" class="greybtn"><i class="fa-sharp fa-solid fa-comment"></i> Get a Quote </a></li>
+    </ul>
+</div>
+
+<style>
+    body {
+        overflow-y: scroll;
+    }
+</style>
+
+<body class="archive tag tag-android-developer tag-127 blog hfeed">
+		<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQB7Z6R"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+<div id="page" class="site sscroll">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    	<!-- <header id="mastheadx" class="site-header navbar-static-top" role="banner">
+       	</header> -->
+
+
+
+<!-- BEGIN Header -->
+<header id="header">
+    <div class="container1">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="GeeksLogo LogoLeft">
+                    <a href="../../../index-2.html"><img src="../../wp-content/uploads/2023/08/logo.png" alt="geeksroot.com" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="rightNavBar hidden_on_mobile">
+                    <ul>
+                        <li><a href="../../../about_us.html"
+                                >About Us</a>
+                        </li>
+                        <li><a href="services.html" id="my-services-link"
+                                >Services</a>
+                        </li>
+                        <li><a href="../../index.html" >Blogs</a>
+                        </li>
+                        <li><a href="../../../case-study.html"
+                                >Case Studies</a>
+                        </li>
+                        <li><span class="circledot"></span></li>
+                        <li>
+                            <div class='navbar' title='Menu'>
+                                <img src="../../wp-content/uploads/2023/08/menubtn.png" alt="OpenMenu" class="img-fluid">
+                            </div>
+                            <div class="close">
+                                <img src="../../wp-content/uploads/2023/08/closeicon.png" alt="OpenMenu" class="img-fluid">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hidden_on_desktop">
+            <div class='navbar' title='Menu'>
+                <img src="../../../images/menubtn.png" alt="OpenMenu" class="img-fluid">
+            </div>
+            <div class="close">
+                <img src="../../../images/closeicon.png" alt="OpenMenu" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</header>
+<div id="navigationWrap">
+    <div class="menu">
+        <div class="container1">
+            <div class="main_nav_Box">
+                <div class="row">
+                    <div class="col-lg-9 col-sm-12 col-xs-12">
+                        <div class="menu">
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <div class="InnerAboutContent">
+                                        <a href="index.html">Geeksroot</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
+                                    <div class="InnerAboutContent">
+                                        <span>About Us</span>
+                                        <p><strong> At GEEKS ROOT,</strong> we develop innovative, creative products
+                                            and services that provide significant communication and information
+                                            solutions.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
+                                    <div class="InnerNavigation">
+                                        <a href="javascript:void(0)" id="Expendlink"><span>Services</span></a>
+                                        <ul>
+                                            <li><a href="../../../graphics_design.html"
+                                                    >Graphics
+                                                    Designing</a></li>
+                                            <li><a href="../../../animation.html"
+                                                    >2D-3D
+                                                    Animation</a></li>
+                                            <li><a href="../../../webdevelopment.html"
+                                                    >Web
+                                                    Development</a></li>
+                                            <li><a href="../../../digital_marketing.html"
+                                                    >Digital
+                                                    Marketing</a></li>
+                                            <li><a href="../../../mobile-application.html"
+                                                    >App
+                                                    Development</a></li>
+                                            <li><a href="../../../blockchain_development.html"
+                                                    >Blockchain
+                                                    Development</a></li>
+                                            <li><a href="../../../dev_ops.html"
+                                                    >DevOps</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
+                                    <div class="InnerNavigation">
+                                        <span>Quick Access Links</span>
+                                        <ul>
+                                            <li><a href="../../../index-2.html">Home</a></li>
+                                            <li><a href="../../../about_us.html"
+                                                    >About
+                                                    Us</a></li>
+                                            <li><a href="../../index.html"
+                                                    >Blogs</a>
+                                            </li>
+                                            <li><a href="../../../career.html"
+                                                    >Careers</a>
+                                            </li>
+                                            <li><a href="../../../contact.html"
+                                                    >Contact</a>
+                                            </li>
+                                            <li><a href="../../../privacy-policy.html"
+                                                    >Privacy
+                                                    Policy</a></li>
+                                            <li><a href="../../../terms-and-conditions.html"
+                                                    >Terms
+                                                    & Conditions</a></li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
+                                    <div class="InnerNavigation">
+                                        <span>Case Studies</span>
+                                        <ul>
+                                            <li><a href="../../../fitmama.html"
+                                                    >Fitmama</a>
+                                            </li>
+                                            <li><a href="../../../hats.html"
+                                                    >Hats</a>
+                                            </li>
+                                            <li><a href="../../../tycoon.html"
+                                                    >Tycoon</a>
+                                            </li>
+                                            <li><a href="../../../universe_queen.html"
+                                                    >Universe
+                                                    Queen</a></li>                                            
+                                            <li><a href="../../../truckandfins.html"
+                                                    >Truck and fins</a>
+                                            </li>
+                                            <li><a href="../../../playon.html"
+                                                    >Play On</a>
+                                            </li>                                            
+                                            <li><a href="../../../professional_scopist.html"
+                                                    >Professional Scopists</a>
+                                            </li>
+                                            <li><a href="../../../washup.html"
+                                                    >Washup</a>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <div class="centerLineNav"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
+                                    <div class="AdressBox">
+                                        <span>United States</span>
+                                        <small>Registered Office</small>
+                                        <a href="#">450 South Orange Avenue, 3rd Floor, Orlando, FL 32801</a>
+                                        <div class="salesbox">
+                                            <a href="mailto:sales@geeksroot.com">sales@geeksroot.com</a>
+                                            <a href="tel:7866001330"> 786-600-1330</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
+                                    <div class="AdressBox">
+                                        <span>United Kingdom</span>
+                                        <small>Registered Office</small>
+                                        <a href="#">Sanderson House Salter St, <br> Preston PR1 1NT, UK</a>
+                                        <div class="salesbox">
+                                            <a href="mailto:sales@geeksroot.com">sales@geeksroot.com</a>
+                                            <a href="tel:1515288588"> 151-528-8588</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
+                                    <div class="AdressBox">
+                                        <span>United Arab Emirates</span>
+                                        <small>Registered Office</small>
+                                        <a href="#">Office No. 2908, BB1, Mazaya <br> Business Ave, JLT, Dubai,
+                                            UAE</a>
+                                        <div class="salesbox">
+                                            <a href="mailto:dubai@geeksroot.com">dubai@geeksroot.com</a>
+                                            <a href="tel:7866001330">786-600-1330</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
+                                    <div class="connectsocial">
+                                        <span>Connect With Us</span>
+                                        <ul>
+                                            <li><a href="https://www.behance.net/geeksroot" target="_blank"><i
+                                                        class="fa-brands fa-behance"></i></a></li>
+                                            <li><a href="https://www.instagram.com/geeksroot/" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="https://twitter.com/geeksroot" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a></li>
+                                            <li><a href="https://www.facebook.com/geeksroot.tar/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/company/geeks-root/"
+                                                    target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li><a href="https://www.youtube.com/channel/UC6Oi4llpkW3NkQucipZXWtg"
+                                                    target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <div class="connectsocial2 TestimonialIcons">
+                                        <span class="MbottomDwon">Reviews</span>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.trustpilot.com/review/geeksroot.com?sort=recency&amp;utm_medium=trustbox&amp;utm_source=MicroReviewCount" target="_blank"><img src="../../../images/trustpilot-cropped.svg"></a>
+                                                <!-- TrustBox widget - Micro Review Count -->
+                                                <!-- <div class="trustpilot-widget" data-locale="en-US"
+                                                    data-template-id="5419b6a8b0d04a076446a9ad"
+                                                    data-businessunit-id="60104fef897a86000191cb05"
+                                                    data-style-height="24px" data-style-width="100%" data-theme="light"
+                                                    data-style-alignment="center">
+                                                    <a href="https://www.trustpilot.com/review/geeksroot.com"
+                                                        target="_blank" rel="noopener">Trustpilot</a>
+                                                </div> -->
+                                                <!-- End TrustBox widget -->
+                                            </li>
+                                            <li><a href="https://www.google.com/search?q=geeksroot&amp;uact=1#rlimm=13720954345826139204"
+                                                    target="_blank"><img src="../../wp-content/uploads/2023/09/google.svg" alt="Google"
+                                                        class="img-fluid svglogo"></a></li>
+                                            <li><a href="https://www.bark.com/en/us/company/geeks-root/wqe2R/"
+                                                    target="_blank"><img src="../../wp-content/uploads/2023/09/bark_elite_pro.svg" alt="Bark"
+                                                        class="img-fluid svglogo"></a>
+                                            </li>
+                                            <li><a href="https://clutch.co/profile/geeks-root#summary"
+                                                    target="_blank"><img src="../../wp-content/uploads/2023/09/clutch.svg" alt="clutch"
+                                                        class="img-fluid svglogo"></a></li>
+                                            <li><a href="https://www.designrush.com/agency/profile/geeks-root"
+                                                    target="_blank"><img src="../../wp-content/uploads/2023/09/designrush.svg" alt="designrush"
+                                                        class="img-fluid svglogo TestiMright0"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="getaQuoteMain">
+                                    <span>Get a quote</span>
+                                    <small>Choose your Subject</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="RightForm">
+                            <div class="MenuRight">
+                                <div class="QoteForm">
+                                    <form id="quote_form" action="https://geeksroot.com/quote_email" method="POST">
+                                        <div class="form-group ">
+                                            <select class="form-select form-select-lg" name="service">
+                                                <option selected>Graphics Designing</option>
+                                                <option value="2D-3D Animation" name="2D_3D_Animation">2D-3D Animation
+                                                </option>
+                                                <option value="Web Development" name="Web_Development">Web Development
+                                                </option>
+                                                <option value="Digital Marketing" name="Digital_Marketing">Digital
+                                                    Marketing</option>
+                                                <option value="App Development" name="App_Development">App Development
+                                                </option>
+                                                <option value="Blockchain Development" name="Blockchain_Development">
+                                                    Blockchain Development</option>
+                                                <option value="Devop" name="Devop">DevOps</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name" name="name"
+                                                id="quote_name" required>
+                                            <span class="error" aria-live="polite"></span>
+                                            <!-- <small class="forerror">Error Message</small> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email" name="email"
+                                                id="quote_email" required >
+                                            <span class="error" aria-live="polite"></span>
+                                            <!-- <small class="forerror">Error Message</small> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" placeholder="Contact Information"
+                                                name="contact" id="quote_contact">
+                                            <span class="error" aria-live="polite"></span>
+                                            <!-- <small class="forerror">Error Message</small> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea placeholder="Message" name="message"
+                                                id="quote_message"></textarea>
+                                            <span class="error" aria-live="polite"></span>
+                                            <!-- <small class="forerror">Error Message</small> -->
+                                        </div>
+                                      
+                                        <!-- <input type="submit" onclick="" name="submit" value="Submit" > -->
+
+                                        <!-- Submit button with reCAPTCHA trigger -->
+                                         <button class="formSubmitBtn g-recaptcha" 
+                                        data-sitekey="6Ld3PIwoAAAAAOX8hzoGb3Cp66qke65bvSsocU4I" 
+                                        data-callback='onSubmit' 
+                                        data-action='quote_email'>Submit</button> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- END Header -->
+<!-- Services Menu -->
+<div id="ServicesMenu">
+    <span class="close-btn">&times;</span>
+    <small>services</small>
+    <ul>
+        <li>
+            <a href="https://www.geeksroot.com/graphics_design.php">
+                <div
+                    class="myElement">
+                </div>
+                <img src="../../../images/webicons/Graphic-Designing.svg" alt="Services" class="img-fluid">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.geeksroot.com/animation.php">
+                <div
+                    class="myElement">
+                </div>
+                <img src="../../../images/webicons/2D%263D-Animation.svg" alt="Services" class="img-fluid">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.geeksroot.com/webdevelopment.php">
+                <div
+                    class="myElement">
+                </div>
+                <img src="../../../images/webicons/Web-Development.svg" alt="Services" class="img-fluid">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.geeksroot.com/digital_marketing.php">
+                <div
+                    class="myElement">
+                </div>
+                <img src="../../../images/webicons/Digital-Marketing.svg" alt="Services" class="img-fluid">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.geeksroot.com/mobile-application.php">
+                <div
+                    class="myElement">
+                </div>
+                <img src="../../../images/webicons/Mobile-App.svg" alt="Services" class="img-fluid">
+            </a>
+        </li>
+        <li><a href="https://www.geeksroot.com/blockchain_development.php">
+                <div
+                    class="myElement">
+                </div>
+                <img src="../../../images/webicons/Blockchain-Dev.svg" alt="Services" class="img-fluid">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.geeksroot.com/dev_ops.php">
+                <div class="myElement">
+                </div>
+                <img src="../../../images/webicons/Dev-Ops.svg" alt="Services" class="img-fluid">
+            </a>
+        </li>
+
+    </ul>
+</div>
+<!-- Services Menu -->
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+  function onSubmit(token) {
+
+    let form = document.querySelector("#quote_form");
+    let quote_name = document.querySelector("#quote_name");
+    let quote_email = document.querySelector("#quote_email");
+    let quote_contact = document.querySelector("#quote_contact");
+    let quote_message = document.querySelector("#quote_message");
+    let emailError = document.querySelector("#quote_email + span.error");
+    
+    
+    quote_name.style.border = "0px";
+    quote_email.style.border = "0px";
+    quote_contact.style.border = "0px";
+    quote_message.style.border = "0px";
+    if (document.getElementById("quote_name").value == "") {
+        document.getElementById("quote_name").style.border = "2px solid #900";
+    }else if(document.getElementById("quote_email").value == ""  ){
+        document.getElementById("quote_email").style.border = "2px solid #900";
+    }else if(document.getElementById("quote_contact").value == ""){
+        document.getElementById("quote_contact").style.border = "2px solid #900";
+    }else if(document.getElementById("quote_message").value == ""){
+        document.getElementById("quote_message").style.border = "2px solid #900";
+    } else {
+        document.getElementById("quote_form").submit();
+    }
+
+  }   
+</script>
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+// let quote_name = document.querySelector("#quote_name");
+// let quote_email = document.querySelector("#quote_email");
+// let quote_contact = document.querySelector("#quote_contact");
+// let quote_message = document.querySelector("#quote_message");
+
+// function handleInputNav() {
+
+//     // Values from dom elements ( input )
+//     let quote_nameValue = quote_name.value.trim();
+//     let quote_emailValue = quote_email.value.trim();
+//     let quote_contactValue = quote_contact.value.trim();
+//     let quote_messageValue = quote_message.value.trim();
+
+//     //  Checking for username
+//     if (quote_nameValue === "") {
+//         setErrorFor_Quote(quote_name, "Name field is required");
+//         return false;
+//     }
+
+//     // Checking for email
+//     if (quote_emailValue === "") {
+//         setErrorFor_Quote(quote_email, "Email field is required");
+//         return false;
+//     } else if (!isEmail(quote_emailValue)) {
+//         setErrorFor_Quote(quote_email, "Email is not valid");
+//         return false;
+//     }
+
+//     if (quote_contactValue === "") {
+//         setErrorFor_Quote(quote_contact, "Contact field is required");
+//         return false;
+//     }
+//     if (quote_messageValue === "") {
+//         setErrorFor_Quote(quote_contact, "Message field is required");
+//         return false;
+//     }
+
+//     return true;
+
+// }
+
+
+// function setErrorFor_Quote(input, message) {
+//     let formControl = input.parentElement;
+//     formControl.className = "form-group error";
+//     let small = formControl.querySelector("small");
+//     small.innerText = message;
+// }
+</script>
+
+
+ <!--Mobile contact-->
+
+ 
+    <div data-scroll-container>
+	<div id="content" class="site-content" >
+                
+
+<section class="breadcrumb-areav2" data-background="https://geeksroot.com/images/banner/banner4.jpg">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7">
+					<div class="bread-titlev2">
+						<div class="bread-menu">
+							<ul>
+								<li><a href="../../../index.html">Home</a></li>
+								<li><a href="#">Blog</a></li>
+								<li>Tag: <span>android developer</span></li>
+							</ul>
+						</div>
+						<h1 class="wow fadeInUp" data-wow-delay=".2s">Tag: <span>android developer</span></h1>
+						<!-- <p class="mt20 wow fadeInUp" data-wow-delay=".4s">We are the storytellers of tomorrow - explicitly changing how you communicate your story </p> -->
+						<!-- <a href="/get-quote.php" class="btn-main bg-btn2 lnk mt20 wow zoomInDown" data-wow-delay=".6s">Get Quote <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+ -->					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="primary" class="content-area wpbstarter-content-area-padding">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+		<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="wpbstarter-blog-list">
+							
+								
+<article id="post-227" class="post-227 post type-post status-publish format-standard has-post-thumbnail hentry category-web-development tag-android-developer tag-blockchain-developer tag-blockchain-development tag-hiring-a-web-developer tag-mean-stack-developer tag-professional-web-development tag-trusted-web-development-company tag-web-development tag-web-development-company tag-website-development-florida">
+	<div class="contentMain">
+    	<div class="blogTitle">
+    						
+			<h2 class="entry-title"><a href="../../mean-stack-developer-a-detailed-guide/index.html" rel="bookmark">Mean Stack Developer: A Detailed Guide</a></h2>    	</div>
+		<div class="entry-content ulol">
+			<p>Today, we can witness the latest and updated information with every single tap. A simple website or application having plain text and a boring theme is not what people like nowadays. Any website or application should consist of engaging, user-friendly elements to surf well in the vast ocean of the internet.</p>
+		</div><!-- .entry-content -->
+	</div>
+			<a href="../../mean-stack-developer-a-detailed-guide/index.html" rel="bookmark">
+			<div class="wpbstarter-featured-content">
+				<img width="750" height="450" src="../../wp-content/uploads/2022/09/coding-man_11zon-1-750x450.jpg" class="attachment-wpbstarter-blog size-wpbstarter-blog wp-post-image" alt="mean stack developer" decoding="async" fetchpriority="high" />				<div class="blog_cat">
+					<span class="cat-links">Posted in <a href="../../category/web-development/index.html" rel="category tag">Web Development</a></span><span class="tags-links">Tagged <a href="index.html" rel="tag">android developer</a>, <a href="../blockchain-developer/index.html" rel="tag">blockchain developer</a>, <a href="../blockchain-development/index.html" rel="tag">blockchain development</a>, <a href="../hiring-a-web-developer/index.html" rel="tag">hiring a web developer</a>, <a href="../mean-stack-developer/index.html" rel="tag">mean stack developer</a>, <a href="../professional-web-development/index.html" rel="tag">professional web development</a>, <a href="../trusted-web-development-company/index.html" rel="tag">trusted web development company</a>, <a href="../web-development/index.html" rel="tag">web development</a>, <a href="../web-development-company/index.html" rel="tag">web development company</a>, <a href="../website-development-florida/index.html" rel="tag">Website Development Florida</a></span>				</div>
+			</div>
+		</a>
+			<header class="entry-header">
+					<div class="entry-meta">
+				<span class="byline"><i class="fas fa-user-circle" aria-hidden="true"></i> by <span class="author vcard"><a class="url fn n" href="../../author/nj3vghcdyr/index.html">admin</a></span></span><span class="posted-on"><i class="fas fa-calendar-check" aria-hidden="true"></i> Posted on <a href="../../mean-stack-developer-a-detailed-guide/index.html" rel="bookmark"><time class="entry-date published" datetime="2022-09-26T11:57:04+00:00">September 26, 2022</time><time class="updated" datetime="2022-09-26T13:26:09+00:00">September 26, 2022</time></a></span><span class="comments-link"><i class="fas fa-comments" aria-hidden="true"></i> <a href="../../mean-stack-developer-a-detailed-guide/index.html#respond">Leave a Comment<span class="screen-reader-text"> on Mean Stack Developer: A Detailed Guide</span></a></span>			</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+
+	<div class="clearfix"></div>
+	<footer class="entry-footer">
+	</footer><!-- .entry-footer -->
+</article><!-- #post-227 -->
+
+<article id="post-151" class="post-151 post type-post status-publish format-standard has-post-thumbnail hentry category-app-development tag-android-app-development tag-android-developer tag-android-programming tag-app-developers tag-app-development tag-app-development-company tag-app-development-service tag-application-developer tag-application-development tag-application-development-service tag-google-play-developer tag-ios-app-development tag-ios-developer tag-ios-development tag-mobile-app-development tag-mobile-app-development-company tag-shopify-app-developer tag-web-app-development tag-web-application-development tag-website-or-app">
+	<div class="contentMain">
+    	<div class="blogTitle">
+    						
+			<h2 class="entry-title"><a href="../../which-is-best-for-business-website-or-app/index.html" rel="bookmark">Which is Best for Business Website or App?</a></h2>    	</div>
+		<div class="entry-content ulol">
+			<p>It&#8217;s easier than in recent memory to make a dynamic business website that looks perfect on any telephone or tablet. Be that as it may, a place doesn&#8217;t displace an application, and an application doesn&#8217;t displace a spot. Nevertheless, the two of them offer extraordinary benefits to organizations, and they can collaborate. It tends to [&hellip;]</p>
+		</div><!-- .entry-content -->
+	</div>
+			<a href="../../which-is-best-for-business-website-or-app/index.html" rel="bookmark">
+			<div class="wpbstarter-featured-content">
+				<img width="750" height="450" src="../../wp-content/uploads/2022/05/19198858-min-750x450.jpg" class="attachment-wpbstarter-blog size-wpbstarter-blog wp-post-image" alt="business website" decoding="async" />				<div class="blog_cat">
+					<span class="cat-links">Posted in <a href="../../category/app-development/index.html" rel="category tag">App Development</a></span><span class="tags-links">Tagged <a href="../android-app-development/index.html" rel="tag">android app development</a>, <a href="index.html" rel="tag">android developer</a>, <a href="../android-programming/index.html" rel="tag">android programming</a>, <a href="../app-developers/index.html" rel="tag">app developers</a>, <a href="../app-development/index.html" rel="tag">app development</a>, <a href="../app-development-company/index.html" rel="tag">App Development Company</a>, <a href="../app-development-service/index.html" rel="tag">app development service</a>, <a href="../application-developer/index.html" rel="tag">application developer</a>, <a href="../application-development/index.html" rel="tag">application development</a>, <a href="../application-development-service/index.html" rel="tag">application development service</a>, <a href="../google-play-developer/index.html" rel="tag">google play developer</a>, <a href="../ios-app-development/index.html" rel="tag">ios app development</a>, <a href="../ios-developer/index.html" rel="tag">ios developer</a>, <a href="../ios-development/index.html" rel="tag">ios development</a>, <a href="../mobile-app-development/index.html" rel="tag">mobile app development</a>, <a href="../mobile-app-development-company/index.html" rel="tag">mobile app development company</a>, <a href="../shopify-app-developer/index.html" rel="tag">shopify app developer</a>, <a href="../web-app-development/index.html" rel="tag">web app development</a>, <a href="../web-application-development/index.html" rel="tag">web application development</a>, <a href="../website-or-app/index.html" rel="tag">Website or App</a></span>				</div>
+			</div>
+		</a>
+			<header class="entry-header">
+					<div class="entry-meta">
+				<span class="byline"><i class="fas fa-user-circle" aria-hidden="true"></i> by <span class="author vcard"><a class="url fn n" href="../../author/nj3vghcdyr/index.html">admin</a></span></span><span class="posted-on"><i class="fas fa-calendar-check" aria-hidden="true"></i> Posted on <a href="../../which-is-best-for-business-website-or-app/index.html" rel="bookmark"><time class="entry-date published" datetime="2022-05-30T15:05:31+00:00">May 30, 2022</time><time class="updated" datetime="2022-09-21T11:45:39+00:00">September 21, 2022</time></a></span><span class="comments-link"><i class="fas fa-comments" aria-hidden="true"></i> <a href="../../which-is-best-for-business-website-or-app/index.html#respond">Leave a Comment<span class="screen-reader-text"> on Which is Best for Business Website or App?</span></a></span>			</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+
+	<div class="clearfix"></div>
+	<footer class="entry-footer">
+	</footer><!-- .entry-footer -->
+</article><!-- #post-151 -->
+
+<article id="post-148" class="post-148 post type-post status-publish format-standard has-post-thumbnail hentry category-app-development tag-android-app-development tag-android-developer tag-android-programming tag-app-developers tag-app-development-company tag-app-development-service tag-application-developer tag-application-development tag-application-development-service tag-google-play-developer tag-ios-app-development tag-ios-developer tag-ios-development tag-mobile-app-development tag-mobile-app-development-company tag-shopify-app-developer tag-web-app-development tag-web-application-development">
+	<div class="contentMain">
+    	<div class="blogTitle">
+    						
+			<h2 class="entry-title"><a href="../../difference-between-android-and-ios-app-development/index.html" rel="bookmark">Difference Between Android and iOS App Development</a></h2>    	</div>
+		<div class="entry-content ulol">
+			<p>While picking either Android or iOS improvement, programmers are often perplexed. Despite having structural similitudes, the two frameworks have a different turn of events, and upkeep draws near. These are just two stages that engineers need to fret about in android and iOS app development. Creating for these two stages, however, is a different cycle. [&hellip;]</p>
+		</div><!-- .entry-content -->
+	</div>
+			<a href="../../difference-between-android-and-ios-app-development/index.html" rel="bookmark">
+			<div class="wpbstarter-featured-content">
+				<img width="750" height="450" src="../../wp-content/uploads/2022/05/2940-min-750x450.jpg" class="attachment-wpbstarter-blog size-wpbstarter-blog wp-post-image" alt="app development" decoding="async" />				<div class="blog_cat">
+					<span class="cat-links">Posted in <a href="../../category/app-development/index.html" rel="category tag">App Development</a></span><span class="tags-links">Tagged <a href="../android-app-development/index.html" rel="tag">android app development</a>, <a href="index.html" rel="tag">android developer</a>, <a href="../android-programming/index.html" rel="tag">android programming</a>, <a href="../app-developers/index.html" rel="tag">app developers</a>, <a href="../app-development-company/index.html" rel="tag">App Development Company</a>, <a href="../app-development-service/index.html" rel="tag">app development service</a>, <a href="../application-developer/index.html" rel="tag">application developer</a>, <a href="../application-development/index.html" rel="tag">application development</a>, <a href="../application-development-service/index.html" rel="tag">application development service</a>, <a href="../google-play-developer/index.html" rel="tag">google play developer</a>, <a href="../ios-app-development/index.html" rel="tag">ios app development</a>, <a href="../ios-developer/index.html" rel="tag">ios developer</a>, <a href="../ios-development/index.html" rel="tag">ios development</a>, <a href="../mobile-app-development/index.html" rel="tag">mobile app development</a>, <a href="../mobile-app-development-company/index.html" rel="tag">mobile app development company</a>, <a href="../shopify-app-developer/index.html" rel="tag">shopify app developer</a>, <a href="../web-app-development/index.html" rel="tag">web app development</a>, <a href="../web-application-development/index.html" rel="tag">web application development</a></span>				</div>
+			</div>
+		</a>
+			<header class="entry-header">
+					<div class="entry-meta">
+				<span class="byline"><i class="fas fa-user-circle" aria-hidden="true"></i> by <span class="author vcard"><a class="url fn n" href="../../author/nj3vghcdyr/index.html">admin</a></span></span><span class="posted-on"><i class="fas fa-calendar-check" aria-hidden="true"></i> Posted on <a href="../../difference-between-android-and-ios-app-development/index.html" rel="bookmark"><time class="entry-date published" datetime="2022-05-26T15:51:10+00:00">May 26, 2022</time><time class="updated" datetime="2022-09-21T12:35:27+00:00">September 21, 2022</time></a></span><span class="comments-link"><i class="fas fa-comments" aria-hidden="true"></i> <a href="../../difference-between-android-and-ios-app-development/index.html#respond">Leave a Comment<span class="screen-reader-text"> on Difference Between Android and iOS App Development</span></a></span>			</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+
+	<div class="clearfix"></div>
+	<footer class="entry-footer">
+	</footer><!-- .entry-footer -->
+</article><!-- #post-148 -->
+						</div>
+					</div>
+					
+					<div class="col-lg-5">
+						
+<aside id="secondary" class="widget-area">
+	<section id="recent-posts-widget-with-thumbnails-2" class="widget recent-posts-widget-with-thumbnails">
+<div id="rpwwt-recent-posts-widget-with-thumbnails-2" class="rpwwt-widget">
+<h2 class="widget-title">Recent Posts</h2>
+	<ul>
+		<li class="rpwwt-sticky"><a href="../../how-to-choose-a-website-maintenance-company-7-tips-to-consider/index.html"><img width="75" height="75" src="../../wp-content/uploads/2022/11/website-mantance-company-150x150.webp" class="attachment-75x75 size-75x75 wp-post-image" alt="Website Maintenance Company" decoding="async" loading="lazy" /><span class="rpwwt-post-title">How To Choose a Website Maintenance Company: 7 Tips To Consider</span></a><div class="rpwwt-post-date">November 29, 2022</div><div class="rpwwt-post-excerpt">Getting a website designed and developed is not enough; your newly launched website requires consistent maintenance.<span class="rpwwt-post-excerpt-more"> …</span></div></li>
+		<li class="rpwwt-sticky"><a href="../../what-does-a-digital-marketing-company-do/index.html"><img width="75" height="75" src="../../wp-content/uploads/2022/11/digital-marketing-company-150x150.jpg" class="attachment-75x75 size-75x75 wp-post-image" alt="digital marketing company" decoding="async" loading="lazy" /><span class="rpwwt-post-title">What Does a Digital Marketing Company Do?</span></a><div class="rpwwt-post-date">November 21, 2022</div><div class="rpwwt-post-excerpt">The number of online buyers is increasing daily; <span class="rpwwt-post-excerpt-more"> …</span></div></li>
+		<li class="rpwwt-sticky"><a href="../../website-development-company-vs-freelancer/index.html"><img width="75" height="75" src="../../wp-content/uploads/2022/11/website-development-company-vs-freelancer-150x150.webp" class="attachment-75x75 size-75x75 wp-post-image" alt="Website Development Company" decoding="async" loading="lazy" /><span class="rpwwt-post-title">Website Development Company vs Freelancer: Which One Is the Better Option?</span></a><div class="rpwwt-post-date">November 14, 2022</div><div class="rpwwt-post-excerpt">Whether it&#8217;s about designing or developing a <span class="rpwwt-post-excerpt-more"> …</span></div></li>
+		<li class="rpwwt-sticky"><a href="../../what-is-a-smart-contract-and-how-does-it-work/index.html"><img width="75" height="75" src="../../wp-content/uploads/2022/10/smart-contract-modern-server-room-background-business-technology_161452-4610-150x150.webp" class="attachment-75x75 size-75x75 wp-post-image" alt="smart contract" decoding="async" loading="lazy" /><span class="rpwwt-post-title">What Is A Smart Contract and How Does It Work?</span></a><div class="rpwwt-post-date">October 24, 2022</div><div class="rpwwt-post-excerpt">Smart contracts are programs that run on IT infrastructures that blockchain technology operates. These are possibly the most valuable tools that are associated with blockchain.<span class="rpwwt-post-excerpt-more"> …</span></div></li>
+		<li class="rpwwt-sticky"><a href="../../how-to-create-cryptocurrency-7-simple-steps/index.html"><img width="75" height="75" src="../../wp-content/uploads/2022/10/banner-vc1-150x150.png" class="attachment-75x75 size-75x75 wp-post-image" alt="create cryptocurrency" decoding="async" loading="lazy" /><span class="rpwwt-post-title">How to Create Cryptocurrency: 7 Simple Steps</span></a><div class="rpwwt-post-date">October 6, 2022</div><div class="rpwwt-post-excerpt">The rising popularity of cryptocurrencies is beyond <span class="rpwwt-post-excerpt-more"> …</span></div></li>
+	</ul>
+</div><!-- .rpwwt-widget -->
+</section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>
+			<ul>
+					<li class="cat-item cat-item-129"><a href="../../category/app-development/index.html">App Development</a> (2)
+</li>
+	<li class="cat-item cat-item-60"><a href="../../category/blockchain-development/index.html">blockchain development</a> (7)
+</li>
+	<li class="cat-item cat-item-67"><a href="../../category/digital-marketing/index.html">Digital Marketing</a> (2)
+</li>
+	<li class="cat-item cat-item-43"><a href="../../category/graphic-design/index.html">Graphic Design</a> (1)
+</li>
+	<li class="cat-item cat-item-49"><a href="../../category/search-engine-optimization/index.html">search engine optimization</a> (1)
+</li>
+	<li class="cat-item cat-item-22"><a href="../../category/web-development/index.html">Web Development</a> (10)
+</li>
+			</ul>
+
+			</section><section id="block-2" class="widget widget_block widget_tag_cloud"><p class="wp-block-tag-cloud"><a href="../3d-nft-art/index.html" class="tag-cloud-link tag-link-85 tag-link-position-1" style="font-size: 8pt;" aria-label="3d nft art (2 items)">3d nft art</a>
+<a href="../android-app-development/index.html" class="tag-cloud-link tag-link-124 tag-link-position-2" style="font-size: 8pt;" aria-label="android app development (2 items)">android app development</a>
+<a href="index.html" class="tag-cloud-link tag-link-127 tag-link-position-3" style="font-size: 11.230769230769pt;" aria-label="android developer (3 items)">android developer</a>
+<a href="../android-programming/index.html" class="tag-cloud-link tag-link-117 tag-link-position-4" style="font-size: 8pt;" aria-label="android programming (2 items)">android programming</a>
+<a href="../app-developers/index.html" class="tag-cloud-link tag-link-116 tag-link-position-5" style="font-size: 8pt;" aria-label="app developers (2 items)">app developers</a>
+<a href="../app-development-company/index.html" class="tag-cloud-link tag-link-26 tag-link-position-6" style="font-size: 22pt;" aria-label="App Development Company (9 items)">App Development Company</a>
+<a href="../application-developer/index.html" class="tag-cloud-link tag-link-122 tag-link-position-7" style="font-size: 8pt;" aria-label="application developer (2 items)">application developer</a>
+<a href="../application-development/index.html" class="tag-cloud-link tag-link-123 tag-link-position-8" style="font-size: 8pt;" aria-label="application development (2 items)">application development</a>
+<a href="../blockchain-developer/index.html" class="tag-cloud-link tag-link-62 tag-link-position-9" style="font-size: 16.076923076923pt;" aria-label="blockchain developer (5 items)">blockchain developer</a>
+<a href="../block-chain-development/index.html" class="tag-cloud-link tag-link-76 tag-link-position-10" style="font-size: 8pt;" aria-label="block chain development (2 items)">block chain development</a>
+<a href="../blockchain-development/index.html" class="tag-cloud-link tag-link-63 tag-link-position-11" style="font-size: 19.307692307692pt;" aria-label="blockchain development (7 items)">blockchain development</a>
+<a href="../blockchain-development-services/index.html" class="tag-cloud-link tag-link-101 tag-link-position-12" style="font-size: 8pt;" aria-label="blockchain development services (2 items)">blockchain development services</a>
+<a href="../block-chain-service/index.html" class="tag-cloud-link tag-link-84 tag-link-position-13" style="font-size: 8pt;" aria-label="block chain service (2 items)">block chain service</a>
+<a href="../coin-creation/index.html" class="tag-cloud-link tag-link-93 tag-link-position-14" style="font-size: 8pt;" aria-label="coin creation (2 items)">coin creation</a>
+<a href="../crypto-consulting-services/index.html" class="tag-cloud-link tag-link-102 tag-link-position-15" style="font-size: 8pt;" aria-label="crypto consulting services (2 items)">crypto consulting services</a>
+<a href="../cryptocurrency-consulting/index.html" class="tag-cloud-link tag-link-87 tag-link-position-16" style="font-size: 8pt;" aria-label="cryptocurrency consulting (2 items)">cryptocurrency consulting</a>
+<a href="../crypto-developer/index.html" class="tag-cloud-link tag-link-86 tag-link-position-17" style="font-size: 8pt;" aria-label="crypto developer (2 items)">crypto developer</a>
+<a href="../defi-solutions/index.html" class="tag-cloud-link tag-link-78 tag-link-position-18" style="font-size: 8pt;" aria-label="defi solutions (2 items)">defi solutions</a>
+<a href="../digital-marketing-agency/index.html" class="tag-cloud-link tag-link-52 tag-link-position-19" style="font-size: 11.230769230769pt;" aria-label="digital marketing agency (3 items)">digital marketing agency</a>
+<a href="../geeks-root/index.html" class="tag-cloud-link tag-link-30 tag-link-position-20" style="font-size: 11.230769230769pt;" aria-label="Geeks Root (3 items)">Geeks Root</a>
+<a href="../google-play-developer/index.html" class="tag-cloud-link tag-link-125 tag-link-position-21" style="font-size: 8pt;" aria-label="google play developer (2 items)">google play developer</a>
+<a href="../hiring-a-web-developer/index.html" class="tag-cloud-link tag-link-32 tag-link-position-22" style="font-size: 20.653846153846pt;" aria-label="hiring a web developer (8 items)">hiring a web developer</a>
+<a href="../ios-app-development/index.html" class="tag-cloud-link tag-link-119 tag-link-position-23" style="font-size: 8pt;" aria-label="ios app development (2 items)">ios app development</a>
+<a href="../ios-developer/index.html" class="tag-cloud-link tag-link-120 tag-link-position-24" style="font-size: 8pt;" aria-label="ios developer (2 items)">ios developer</a>
+<a href="../ios-development/index.html" class="tag-cloud-link tag-link-121 tag-link-position-25" style="font-size: 8pt;" aria-label="ios development (2 items)">ios development</a>
+<a href="../marketing-agency/index.html" class="tag-cloud-link tag-link-54 tag-link-position-26" style="font-size: 11.230769230769pt;" aria-label="marketing agency (3 items)">marketing agency</a>
+<a href="../mobile-app-development/index.html" class="tag-cloud-link tag-link-126 tag-link-position-27" style="font-size: 8pt;" aria-label="mobile app development (2 items)">mobile app development</a>
+<a href="../nft-consulting/index.html" class="tag-cloud-link tag-link-82 tag-link-position-28" style="font-size: 8pt;" aria-label="nft consulting (2 items)">nft consulting</a>
+<a href="../nft-developer/index.html" class="tag-cloud-link tag-link-81 tag-link-position-29" style="font-size: 8pt;" aria-label="nft developer (2 items)">nft developer</a>
+<a href="../nft-development/index.html" class="tag-cloud-link tag-link-89 tag-link-position-30" style="font-size: 8pt;" aria-label="nft development (2 items)">nft development</a>
+<a href="../professional-web-development/index.html" class="tag-cloud-link tag-link-28 tag-link-position-31" style="font-size: 20.653846153846pt;" aria-label="professional web development (8 items)">professional web development</a>
+<a href="../professional-web-development-agencies/index.html" class="tag-cloud-link tag-link-29 tag-link-position-32" style="font-size: 19.307692307692pt;" aria-label="professional web development agencies (7 items)">professional web development agencies</a>
+<a href="../smart-contract-developer/index.html" class="tag-cloud-link tag-link-83 tag-link-position-33" style="font-size: 11.230769230769pt;" aria-label="smart contract developer (3 items)">smart contract developer</a>
+<a href="../smart-contract-development/index.html" class="tag-cloud-link tag-link-91 tag-link-position-34" style="font-size: 11.230769230769pt;" aria-label="smart contract development (3 items)">smart contract development</a>
+<a href="../smart-contracts-blockchain/index.html" class="tag-cloud-link tag-link-79 tag-link-position-35" style="font-size: 8pt;" aria-label="smart contracts blockchain (2 items)">smart contracts blockchain</a>
+<a href="../solidity-developer/index.html" class="tag-cloud-link tag-link-77 tag-link-position-36" style="font-size: 11.230769230769pt;" aria-label="solidity developer (3 items)">solidity developer</a>
+<a href="../solidity-programmer/index.html" class="tag-cloud-link tag-link-71 tag-link-position-37" style="font-size: 11.230769230769pt;" aria-label="solidity programmer (3 items)">solidity programmer</a>
+<a href="../trusted-web-development-company/index.html" class="tag-cloud-link tag-link-31 tag-link-position-38" style="font-size: 20.653846153846pt;" aria-label="trusted web development company (8 items)">trusted web development company</a>
+<a href="../web-and-app-development-company/index.html" class="tag-cloud-link tag-link-24 tag-link-position-39" style="font-size: 20.653846153846pt;" aria-label="Web and App Development Company (8 items)">Web and App Development Company</a>
+<a href="../web-app-development/index.html" class="tag-cloud-link tag-link-115 tag-link-position-40" style="font-size: 8pt;" aria-label="web app development (2 items)">web app development</a>
+<a href="../web-application-development/index.html" class="tag-cloud-link tag-link-118 tag-link-position-41" style="font-size: 8pt;" aria-label="web application development (2 items)">web application development</a>
+<a href="../web-development-company/index.html" class="tag-cloud-link tag-link-27 tag-link-position-42" style="font-size: 20.653846153846pt;" aria-label="web development company (8 items)">web development company</a>
+<a href="../website-development-company/index.html" class="tag-cloud-link tag-link-25 tag-link-position-43" style="font-size: 22pt;" aria-label="Website Development Company (9 items)">Website Development Company</a>
+<a href="../website-development-florida/index.html" class="tag-cloud-link tag-link-23 tag-link-position-44" style="font-size: 20.653846153846pt;" aria-label="Website Development Florida (8 items)">Website Development Florida</a>
+<a href="../website-maintenance/index.html" class="tag-cloud-link tag-link-136 tag-link-position-45" style="font-size: 8pt;" aria-label="website maintenance (2 items)">website maintenance</a></p></section></aside><!-- #secondary -->
+					</div>
+				</div>
+			</div>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+    		
+	<footer class="wpcustomFooter forBlogFooter">
+
+		<div class="container2">
+			<div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="TestimonailLeftMain TestimonailLeftMainInner">
+                        <div class="Testimonialleft">
+                            <span>Testimonials</span>
+                        </div>
+                        <div class="TestimonialLeftSlider">
+                            <!-- Slider Item -->
+                            <div>
+                                <div class="TestimonialSlider">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-2 col-md-2 col-2">
+                                            <img src="../../../images/alexmartins.webp" alt="">
+                                        </div>
+                                        <div class="col-lg-10 col-sm-10 col-md-10 col-10">
+                                            <span>Alex Martins</span>
+                                            <small>Co-Founder of The Equity Index</small>
+                                        </div>
+                                    </div>
+                                    <p>Excellent and efficient service It was an absolute pleasure to work with Geeks
+                                        Root, and with Khalid in particular - they understood the brief right away, and
+                                        were very efficient and responsive via email and text. We were very satisfied
+                                        with our final web design and have received many compliments about the way it
+                                        looks. Overall, would highly recommend hiring them for your web design needs.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slider Item -->
+                            <!-- Slider Item -->
+                            <div>
+                                <div class="TestimonialSlider">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-2 col-md-2 col-2">
+                                            <img src="../../../images/clintAnderson.webp" alt="">
+                                        </div>
+                                        <div class="col-lg-10 col-sm-10 col-md-10 col-10">
+                                            <span>Clint Anderson</span>
+                                            <small>Master Barber at Grand Master Fades</small>
+                                        </div>
+                                    </div>
+                                    <p>I love these guys!!! Super supportive! I hope to continue to do business with
+                                        them for years to come</p>
+                                </div>
+                            </div>
+                            <!-- Slider Item -->
+                            <!-- Slider Item -->
+                            <div>
+                                <div class="TestimonialSlider">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-2 col-md-2 col-2">
+                                            <img src="../../../images/TiffanyJohnson.png" alt="">
+                                        </div>
+                                        <div class="col-lg-10 col-sm-10 col-md-10 col-10">
+                                            <span>Tiffany Johnson</span>
+                                            <small>Owner of Tifftop Shape Gym </small>
+                                        </div>
+                                    </div>
+                                    <p>Absolutely love my design This team did an amazing job with bringing my logo to
+                                        life! Exactly what I wanted and more! Great work, great and quick with
+                                        communication, will absolutely recommend and use again. Thank you so much I
+                                        absolutely love my logo design!!!</p>
+                                </div>
+                            </div>
+                            <!-- Slider Item -->
+                            <!-- Slider Item -->
+                            <div>
+                                <div class="TestimonialSlider">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-2 col-md-2 col-2">
+                                            <img src="../../../images/JoannaMaroussis.png" alt="">
+                                        </div>
+                                        <div class="col-lg-10 col-sm-10 col-md-10 col-10">
+                                            <span>Joanna Maroussis</span>
+                                            <small>Real Estate Agent</small>
+                                        </div>
+                                    </div>
+                                    <p>What an awesome experience ! Working with Geeks Root was an
+                                        awesome and simple
+                                        experience. We worked through few revisions and Tyler was always
+                                        calm and
+                                        encouraging- even if i had negative feedback to some of the
+                                        design concepts. I
+                                        was made comfortable and did not feel rushed through the
+                                        process. I would
+                                        happily recommend them for logo design. In the end- I have a
+                                        perfect logo for my
+                                        business .</p>
+                                </div>
+                            </div>
+                            <!-- Slider Item -->
+                            <!-- Slider Item -->
+                            <div>
+                                <div class="TestimonialSlider">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-2 col-md-2 col-2">
+                                            <img src="../../../images/RyanZynger.png" alt="">
+                                        </div>
+                                        <div class="col-lg-10 col-sm-10 col-md-10 col-10">
+                                            <span>Ryan Zynger</span>
+                                            <small>Owner of Zynger Events</small>
+                                        </div>
+                                    </div>
+                                    <p>Geeks Root was able to turn around a… Geeks Root was able to turn
+                                        around a
+                                        project quickly and professionally. I enjoyed the experience and
+                                        will definitely
+                                        with them again!</p>
+                                </div>
+                            </div>
+                            <!-- Slider Item -->
+                            <!-- Slider Item -->
+                            <div>
+                                <div class="TestimonialSlider">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-2 col-md-2 col-2">
+                                            <img src="../../../images/lisastone.png" alt="">
+                                        </div>
+                                        <div class="col-lg-10 col-sm-10 col-md-10 col-10">
+                                            <span>Lisa Santos</span>
+                                            <small>CEO of Relentless</small>
+                                        </div>
+                                    </div>
+                                    <p>This was a very good experience. Sam and his team did a fantastic job answering
+                                        my questions and making sure I was happy with the end result. I highly
+                                        recommend.</p>
+                                </div>
+                            </div>
+                            <!-- Slider Item -->
+                            <!-- Slider Item -->
+                            <div>
+                                <div class="TestimonialSlider">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-2 col-md-2 col-2">
+                                        <img src="../../../images/kay.png" alt="Kay Victoria Hindmarsh">
+                                        </div>
+                                        <div class="col-lg-10 col-sm-10 col-md-10 col-10">
+                                            <span>Kay Victoria Hindmarsh</span>
+                                            <small>VP - treydora</small>
+                                        </div>
+                                    </div>
+                                    <p>I found Geeksroot while searching for a company to develop a website for my new
+                                        business, and was impressed by the clarity the team communicated to me before I
+                                        chose them- I’m not tech savvy and they really made me understand clearly what
+                                        would be included in our deal. Sid and Khalid worked on my site mainly, and they
+                                        did a fabulous job. I highly recommend.</p>
+                                </div>
+                            </div>
+                            <!-- Slider Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="redSeprator">
+                        <img src="../../../images/blackseperator.png" alt="Seperator" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+			<div class="row">
+		        <div class="col-md-4 col-sm-4 col-12">
+		            <div class="footermain">
+		                <div class="column1">
+		                    <span>Top Rated Development Company</span>
+		                    <p><strong>Geeksroot</strong> is closely watching digital trends in the world of
+		                        communication
+		                        <br> with a steadly growing team of smart professionals.
+		                    </p>
+		                    <small>We Are An All-Round Digital <br> Design Agency</small>
+		                    <div class="footerreviews">
+			                    <ul>
+                                    <li>
+                                        <a href="https://www.trustpilot.com/review/geeksroot.com?sort=recency&amp;utm_medium=trustbox&amp;utm_source=MicroReviewCount" target="_blank"><img src="../../../images/trustpilot-cropped.svg"></a>
+                                        <!-- TrustBox widget - Micro Review Count -->
+                                        <!-- <div class="trustpilot-widget" data-locale="en-US"
+                                            data-template-id="5419b6a8b0d04a076446a9ad"
+                                            data-businessunit-id="60104fef897a86000191cb05" data-style-height="24px"
+                                            data-style-width="100%" data-theme="light" data-style-alignment="center">
+                                            <a href="https://www.trustpilot.com/review/geeksroot.com" target="_blank"
+                                                rel="noopener">Trustpilot</a>
+                                        </div> -->
+                                        <!-- End TrustBox widget -->
+                                    </li>
+                                    <li><a href="https://www.google.com/search?q=geeksroot&amp;uact=1#rlimm=13720954345826139204"
+                                            target="_blank"><img src="../../wp-content/uploads/2023/09/google-1.svg" alt="Google"
+                                                class="img-fluid svglogo"></a></li>
+                                    <li><a href="https://www.bark.com/en/us/company/geeks-root/wqe2R/"
+                                            target="_blank"><img src="../../wp-content/uploads/2023/09/bark_elite_pro.svg" alt="Bark"
+                                                class="img-fluid svglogo"></a></li>
+                                    <li><a href="https://clutch.co/profile/geeks-root#summary" target="_blank"><img
+                                                src="../../wp-content/uploads/2023/09/clutch-1.svg" alt="Clutch" class="img-fluid svglogo"></a></li>
+                                    <li><a href="https://www.designrush.com/agency/profile/geeks-root"
+                                            target="_blank"><img src="../../wp-content/uploads/2023/09/designrush.svg" alt="Designrush"
+                                                class="img-fluid svglogo TestiMright0"></a></li>
+			                    </ul>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-md-2 col-sm-2 col-12">
+		            <div class="column2">
+		                <div class="quicklinks">
+		                    <span>OUR SERVICES</span>
+		                    <ul>
+		                        <li><a href="../../../graphics_design.html">Graphics Designing</a></li>
+		                        <li><a href="../../../2d_3d_art.html">2D-3D Animation</a></li>
+		                        <li><a href="../../../webdevelopment.html">Web Development</a></li>
+		                        <li><a href="../../../digital_marketing.html">Digital Marketing</a></li>
+		                        <li><a href="../../../mobile-application.html">App Development</a></li>
+		                        <li><a href="../../../blockchain_development.html">Block Chain Development</a></li>
+		                        <li><a href="../../../dev_ops.html">DevOps</a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-md-2 col-sm-2 col-12">
+		            <div class="column3">
+		                <div class="quicklinks">
+		                    <span>QUICK ACCESS LINKS</span>
+		                    <ul>
+		                        <li><a href="../../../index-2.html">Home</a></li>
+		                        <li><a href="../../../about_us.html">About Us</a></li>
+		                        <li><a href="../../index.html">Blog</a></li>
+		                        <li><a href="../../../case-study.html">Case Studies</a></li>
+		                        <li><a href="../../../career.html">Careers</a></li>
+		                        <li><a href="../../../contact.html">Contact</a></li>
+		                        <li><a href="../../../privacy-policy.html">Privacy Policy</a></li>
+		                        <li><a href="../../../terms-and-conditions.html">Terms & Conditions</a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-md-4 col-sm-4 col-12">
+		            <div class="column4">
+		                <span>LOCATIONS</span>
+		                <div class="locations">
+		                    <small>United States</small>
+		                    <a href="tel:7866001330">786-600-1330</a>
+		                    <p>450 South Orange Avenue, 3rd Floor,  Orlando, FL 32801</p>
+		                </div>
+		                <div class="locations">
+		                    <small>United Kingdom</small>
+		                    <a href="tel:1515288588"> 151-528-8588</a>
+		                    <p>Sanderson House Salter St, Preston  PR1 1NT, UK</p>
+		                </div>
+		                <div class="locations">
+		                    <small>United Arab Emirates</small>
+		                    <a href="tel:7866001330">786-600-1330</a>
+		                    <p>Office No. 2908, BB1, Mazaya Business Ave, JLT, Dubai, UAE</p>
+		                </div>
+		            </div>
+		        </div>
+		  	</div>
+		</div>
+        <div class="sociallistmain">
+                <div class="container2">
+                    <div class="row">
+                      <div class="col-md-4 col-lg-4 col-sm-4 col-12">
+                        <div class="emailinfo float-start">
+                        <img src="../../wp-content/uploads/2023/08/circlered.png" alt="Lets Talk" class="img-fluid" />                
+                      </div>
+                        <div class="emailinfo float-start">                  
+                          <p>Writing an email:</p>
+                          <a href="mailto:info@geeksroot.com">info@geeksroot.com</a>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-4 col-12">
+                        <div class="copyrightText">
+                          <p>COPYRIGHT | ALL RIGHTS RESERVED 2023 - <strong>GEEKSROOT.COM</strong></p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-4 col-12">
+                        <div class="footersocial">
+                          <ul>
+                            <li><a href="https://www.behance.net/geeksroot" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                            <li><a href="https://www.instagram.com/geeksroot/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="https://twitter.com/geeksroot" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>							  
+                            <li><a href="https://www.facebook.com/geeksroot.tar/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>                            
+                            <li><a href="https://www.linkedin.com/company/geeks-root/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC6Oi4llpkW3NkQucipZXWtg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="clearfix"></div> 
+                      </div>
+                    </div>
+                </div>              
+            </div>  
+
+		<!-- Start of  Zendesk Widget script -->
+<!-- 		<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  id="ze-snippet" data-wpmeteor-src="https://static.zdassets.com/ekr/snippet.js?key=7d6a98e9-e5a6-4261-a394-b711d0f78049"> </script> -->
+		<!-- End of  Zendesk Widget script -->
+
+	</footer>
+
+</div><!-- #page -->
+</div>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+	 jQuery(document).ready(function ($) {
+	    //home_section0();
+
+		$('.TestimonialLeftSlider').slick({
+	  dots: true,
+	  infinite: false,
+	  arrows: false,
+	  autoplay:true,
+	  autoplaySpeed:2500,  
+	  speed: 300,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  responsive: [
+	    {
+	      breakpoint: 1024,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1,
+	        infinite: true,
+	        dots: true
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});    
+	
+	
+	$('#header .navbar img').click(function() {
+		// alert("Open");
+        $('body.blog ').addClass('bodyOverflow');
+    });
+    $('#header .close img').click(function() {
+    	// alert("close");
+        $('body.blog ').removeClass('bodyOverflow');
+    });
+	
+ });
+// ===================== Testimonial Slider ============== // 
+
+</script>
+
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/gsap.min.js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/locomotive-scroll.min.js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/ScrollTrigger.min.js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/slick.min.js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/TweenMax.min.js"></script>
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/vendor/modernizr-3.5.0.min.js"></script>
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/bootstrap.bundle.min.js"></script> 
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/plugin.min.js"></script>
+
+<!--common script file-->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/main.js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/js/custom.js"></script>
+<!-- <script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="/js/preloader.js"></script> -->
+
+<!-- TrustBox script -->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" data-wpmeteor-async></script>
+<!-- End TrustBox script -->
+
+
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+	jQuery('.comment-form input#author').attr('placeholder','Name');
+	jQuery('.comment-form input#email').attr('placeholder','Email');
+	jQuery('.comment-form input#url').attr('placeholder','Website');
+	jQuery('.comment-form textarea#comment').attr('placeholder','Write Your Comment');
+	
+	// jQuery('.comment-form input#commentsubmit').addClass('btn-br bg-btn3 btshad-b2 lnk');
+	jQuery('.comment-form input#commentsubmit').remove();
+	// jQuery('.comment-form input#commentsubmit').attr('value','Submit <i class="fas fa-chevron-right fa-icon"></i>');
+	var	button_append = "<button name='submit' type='submit' id='commentsubmit' class='submit btn-br bg-btn3 btshad-b2 lnk btn btn-primary'>Submit <i class='fas fa-chevron-right fa-icon'></i><span class='circle'></span></button>"
+	jQuery('.comment-form p.form-submit').append(button_append);
+	// jQuery('.comments-area h3#reply-title').text('Comments');
+	jQuery('.comments-area h2.comments-title').text('Comments');
+	jQuery('.comment-meta a').attr('href','');
+	jQuery('.comment-body footer.reply.comment-reply a.comment-reply-link').append('<i class="fas fa-reply"></i>');
+	jQuery('nav.navigation.posts-navigation .nav-previous a').addClass('btn-br bg-btn3 btshad-b2 lnk');
+	jQuery('nav.navigation.posts-navigation .nav-next a').addClass('btn-br bg-btn3 btshad-b2 lnk');
+	jQuery('nav.navigation.posts-navigation .nav-next a').append("<span class='circle'></span>");
+	jQuery('nav.navigation.posts-navigation .nav-previous a').append("<span class='circle'></span>");
+</script>
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+	// ================================= Navigation Js ==================== //
+// var navigation = new TimelineLite({paused:true, reversed:true});
+// navigation.to("#navigationWrap", 0.5, {opacity: 1, display: 'block'})
+//           .to(".navbar", 0.3, {opacity: 0}, "-=0.1")
+//           .to(".close", 0.3, {display: "block", opacity: 1}, "-=0.1")
+//           .from(".menu", 0.5, {opacity: 0, y: 30})
+//           .from(".RightForm", 0.5, {opacity: 0});
+          
+
+// $(".navbar, .close").click (function() {
+//   navigation.reversed() ? navigation.play() : navigation.reverse();
+// });
+
+var navigation = new TimelineLite({ paused: true, reversed: true });
+
+navigation
+  .to("#navigationWrap", 0.5, { opacity: 1, display: 'block' })
+  .to(".navbar", 0.3, { opacity: 0 }, "-=0.1")
+  .to(".close", 0.3, { display: "block", opacity: 1 }, "-=0.1")
+  .from(".menu", 0.5, { opacity: 0, y: 30 })
+  .from(".RightForm", 0.5, { opacity: 0 });
+
+jQuery(".navbar, .close").click(function () {
+  if (navigation.reversed()) {
+    navigation.play();
+    // Change the logo to the white version when the menu is opened
+    jQuery('.LogoLeft').html(`<a href="index.html"><img src="https://geeksroot.com/images/logo-white.svg" alt="geeksroot.com" class="img-fluid"  loading="lazy"></a>`);
+    logoWhite();
+  } else {
+    navigation.reverse();
+    // Change the logo back to the default version when the menu is closed
+    jQuery('.LogoLeft').html(`<a href="index.html"><img src="https://geeksroot.com/images/logo.svg" alt="geeksroot.com" class="img-fluid"  loading="lazy"></a>`);
+    logoBlack();
+  }
+});
+
+function logoBlack(){
+  jQuery('.LogoLeft').html(`<a href="index.html"><img src="https://geeksroot.com/images/logo.svg" alt="geeksroot.com" class="img-fluid"  loading="lazy"></a>`);
+}
+
+
+function logoWhite(){
+  jQuery('.LogoLeft').html(`<a href="index.html"><img src="https://geeksroot.com/images/logo-white.svg" alt="geeksroot.com" class="img-fluid"  loading="lazy"></a>`);
+}
+
+
+
+// ========================== Navigation Js  ========================== //
+</script>
+
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+	// ================== Services Menu Js ======================= //
+
+    var myServicesLink = document.getElementById('my-services-link');
+    var menu = document.getElementById('ServicesMenu');
+    var closeBtn = menu.querySelector('.close-btn');
+
+    myServicesLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Show the menu
+      menu.style.display = 'flex';
+
+      // Fade-in animation using GSAP
+      gsap.fromTo(
+        ServicesMenu,
+        { opacity: 0 },
+        { opacity: 1, duration: 0.5 }
+      );
+    });
+
+    closeBtn.addEventListener('click', function() {
+      // Fade-out animation using GSAP
+      gsap.to(
+        ServicesMenu,
+        { opacity: 0, duration: 0.5, onComplete: hideMenu }
+      );
+    });
+
+    function hideMenu() {
+      ServicesMenu.style.display = 'none';
+    }  
+
+	// ============ Services Menu Js ========================= //
+
+
+
+</script>
+
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+// ================================================== BEGIN Cursor Pointer =====================================================
+
+let svgns = "http://www.w3.org/2000/svg";
+let root = document.querySelector("svg");
+let ease = 0.75;
+
+let pointer = { 
+  x: window.innerWidth  / 2, 
+  y: window.innerHeight / 2 
+};
+
+window.addEventListener("mousemove", (event) => {
+  pointer.x = event.clientX;
+  pointer.y = event.clientY;
+});
+
+let leader = (prop) => {
+  return prop === "x" ? pointer.x : pointer.y;
+}
+
+let total = 100;
+for (let i = 0; i < total; i++) {
+  leader = createLine(leader, i);
+}
+
+function createLine(leader, i) {
+  
+  let line = document.createElementNS(svgns, "line");
+  root.appendChild(line);
+  
+  gsap.set(line, { x: -15, y: -15, opacity: (total - i) / total });
+  
+  let pos = gsap.getProperty(line);
+    
+  gsap.to(line, {
+    duration: 1000,
+    x: "+=1",
+    y: "+=1",
+    repeat: -1,
+    ease: "none",
+    modifiers: {
+      x: () => {        
+        let posX = pos("x");
+        let leaderX = leader("x");
+        let x = posX + (leaderX - posX) * ease;
+        line.setAttribute("x2", leaderX - x);
+        return x;
+      },
+      y: () => {        
+        let posY = pos("y");
+        let leaderY = leader("y");
+        let y = posY + (leaderY - posY) * ease;
+        line.setAttribute("y2", leaderY - y);
+        return y;
+      }
+    }
+  });  
+  
+  return pos;
+}    
+</script>
+
+
+<!-- <script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+    const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+	});
+
+</script> -->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/blog/wp-content/plugins/metronet-profile-picture/js/mpp-frontend.js?ver=2.6.0" id="mpp_gutenberg_tabs-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/blog/wp-content/themes/wpbstarter/assets/js/sina-nav.js?ver=2.1.0" id="sinanavjs-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/blog/wp-content/themes/wpbstarter/assets/js/bootstrap.bundle.min.js?ver=4.4.1" id="bootstrap-bundled-js-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/blog/wp-content/themes/wpbstarter/assets/js/navigation.js?ver=1.0" id="wpbstarter-navigationjs-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/blog/wp-content/themes/wpbstarter/assets/js/theme-script.js?ver=6.4.2" id="wpbstarter-themejs-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/blog/wp-content/themes/wpbstarter/assets/js/skip-link-focus-fix.js?ver=1.0" id="wpbstarter-skip-link-focus-fix-js-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://geeksroot.com/blog/wp-content/themes/wpbstarter/assets/js/main.js?ver=1.0" id="wpbstarter-main-js-js"></script>
+<!-- <script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-wpmeteor-type="text/javascript"  data-wpmeteor-src="https://www.google.com/recaptcha/api.js?render=6Ld3PIwoAAAAAOX8hzoGb3Cp66qke65bvSsocU4I"></script> -->
+</body>
+
+<!-- Mirrored from geeksroot.com/blog/tag/android-developer/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Oct 2024 19:50:31 GMT -->
+</html>
